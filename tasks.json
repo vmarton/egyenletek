@@ -1,0 +1,108 @@
+ [
+    {
+        "task_id": 1,
+        "task_text": "Egy 36 éves apának 3 éves fia van. Hány év múlva lesz az apa négyszer annyi idős, mint a fia?",
+        "explanation": "<p>Legyen <b>x</b> az évek száma, amely után az apa négyszer annyi idős lesz, mint a fia.</p><p>Az apa életkora <b>x</b> év múlva: <b>36 + x</b>.</p><p>A fiú életkora <b>x</b> év múlva: <b>3 + x</b>.</p><p>Feltétel: az apa életkora <b>4-szerese</b> lesz a fiú életkorának.</p>",
+        "equation": {
+          "base_equation": "36 + x = 4 * (3 + x)",
+          "detailed_solution": "<p>36 + x = 12 + 4x</p><p>36 = 12 + 3x</p><p>24 = 3x</p>"
+        },
+        "result": "x=8"
+      },
+      {
+        "task_id": 2,
+        "task_text": "Három testvér életkorának összege 18 év. A legidősebb 6 évvel idősebb a legfiatalabbnál. Mennyi idősek a testvérek, ha egyenlő időközönként születtek?",
+        "explanation": "<p>Legyen a legfiatalabb testvér életkora <b>x</b>.</p><p>Ha egyenlő időközönként születtek, akkor a középső testvér életkora <b>x + k</b>, a legidősebbé pedig <b>x + 2k</b>.</p><p>Az életkorok összege: <b>x + (x + k) + (x + 2k) = 18</b>.</p><p>A legidősebb 6 évvel idősebb a legfiatalabbnál: <b>x + 2k - x = 6</b>, tehát <b>2k = 6</b>.</p>",
+        "equation": {
+          "base_equation": "x + (x + k) + (x + 2k) = 18",
+          "detailed_solution": "<p>3x + 3k = 18</p><p>x + k = 6</p><p>k = 2</p><p>3x + 6 = 18</p><p>3x = 12</p>"
+        },
+        "result": "Legfiatalabb: 4, középső: 6, legnagyobb: 10"          
+      },
+      {
+        "task_id": 3,
+        "task_text": "Két természetes szám közül az egyik 5-tel nagyobb, mint a másik. Mi lehet ez a két szám, ha az összegük legfeljebb 30?",
+        "explanation": "<p>Legyen az egyik szám <b>x</b>, a másik pedig <b>x + 5</b>.</p><p>Az összegük: <b>x + (x + 5) ≤ 30</b>.</p>",
+        "equation": {
+          "base_equation": "x + (x + 5) ≤ 30",
+          "detailed_solution": "<p>2x + 5 ≤ 30</p><p>2x ≤ 25</p><p>x ≤ 12</p>"
+        },
+        "result": "x ≤ 12, x+5 ≤ 17"
+      },
+      {
+        "task_id": 4,
+        "task_text": "Két természetes szám aránya 2 : 3. Mi lehet ez a két szám, ha különbségük nagyobb 10-nél?",
+        "explanation": "<p>Legyen a kisebbik szám <b>2x</b>, a nagyobbik szám pedig <b>3x</b>.</p><p>A különbségük: <b>3x - 2x > 10</b>.</p>",
+        "equation": {
+          "base_equation": "3x - 2x > 10",
+          "detailed_solution": "<p>x > 10</p>"
+        },
+        "result": "x > 10, 2x > 20, 3x > 30"
+      },
+      {
+        "task_id": 5,
+        "task_text": "Gondoltam egy számot, hozzáadtam a nála 2-vel nagyobb szám kétszeresét, így 2,4-del kisebb számot kaptam, mint a gondolt szám négyszerese. Melyik számra gondoltam?",
+        "explanation": "<p>Legyen a gondolt szám <b>x</b>.</p><p>A feltétel: <b>x + 2 * (x + 2) = 4x - 2.4</b>.</p>",
+        "equation": {
+          "base_equation": "x + 2 * (x + 2) = 4x - 2.4",
+          "detailed_solution": "<p>x + 2x + 4 = 4x - 2.4</p><p>3x + 4 = 4x - 2.4</p><p>4 + 2.4 = x</p>"
+        },
+        "result": "x = 6.4"
+      },
+      {
+        "task_id": 6,
+        "task_text": "Gondoltam egy számot, elvettem belőle 20-at, az eredményt megkétszereztem, újra elvettem belőle 20-at, az eredményt újra megkétszereztem, majd újra elvettem belőle 20-at. Az eredmény 0 lett. Melyik számra gondoltam?",
+        "explanation": "<p>Legyen a gondolt szám <b>x</b>.</p><p>A műveletek sorrendje alapján: <b>2 * (2 * (2 * (x - 20) - 20) - 20) = 0</b>.</p>",
+        "equation": {
+          "base_equation": "2 * (2 * (2 * (x - 20) - 20) - 20) = 0",
+          "detailed_solution": "<p>2 * (2 * (2x - 40 - 20) - 20) = 0</p><p>2 * (2 * (2x - 60) - 20) = 0</p><p>2 * (4x - 120 - 20) = 0</p><p>2 * (4x - 140) = 0</p><p>8x - 280 = 0</p>"
+        },
+        "result": "x = 35"
+      },
+      {
+        "task_id": 7,
+        "task_text": "Egy téglalap egyik oldalának hossza kétszerese a másik oldal hosszának. Mi lehet a téglalap oldalainak hossza, ha a kerülete 48 cm?",
+        "explanation": "<p>Legyen a rövidebb oldal hossza <b>x</b>, a hosszabbik oldal pedig <b>2x</b>.</p><p>A téglalap kerületének képlete: <b>2 * (x + 2x) = 48</b>.</p>",
+        "equation": {
+          "base_equation": "2 * (x + 2x) = 48",
+          "detailed_solution": "<p>2 * 3x = 48</p><p>6x = 48</p>"
+        },
+        "result": "x = 8, 2x = 16"
+      },
+      {
+        "task_id": 8,
+        "task_text": "Egy háromszög három oldalának aránya 3 : 4 : 5. Mi lehet a háromszög oldalainak hossza, ha a kerülete 36 cm?",
+        "explanation": "<p>Legyenek az oldalak <b>3x</b>, <b>4x</b>, és <b>5x</b>.</p><p>A háromszög kerülete: <b>3x + 4x + 5x = 36</b>.</p>",
+        "equation": {
+          "base_equation": "3x + 4x + 5x = 36",
+          "detailed_solution": "<p>12x = 36</p>"
+        },
+        "result": "x = 3, oldalak: 9, 12, 15"
+      },
+      {
+        "task_id": 9,
+        "task_text": "Egy szám háromszorosa 10-zel nagyobb, mint a szám kétszerese. Melyik ez a szám?",
+        "explanation": "<p>Legyen a keresett szám <b>x</b>.</p><p>A feltétel: <b>3x = 2x + 10</b>.</p>",
+        "equation": {
+          "base_equation": "3x = 2x + 10",
+          "detailed_solution": "<p>3x - 2x = 10</p>"
+        },
+        "result": "x = 10"
+      },
+      {
+        "task_id": 10,
+        "task_text": "Mekkorák annak a háromszögnek a szögei, amelynek legnagyobb szöge 4,2-szerese a legkisebb szögnek, a középső szög pedig kétszerese?",
+        "explanation": "<p>Legyen a legkisebb szög <b>x</b>. A középső szög <b>2x</b>, a legnagyobb szög pedig <b>4.2x</b>.</p><p>A háromszög szögeinek összege: <b>x + 2x + 4.2x = 180</b>.</p>",
+        "equation": {
+          "base_equation": "x + 2x + 4.2x = 180",
+          "detailed_solution": "<p>7.2x = 180</p>"
+        },
+        "result": "x = 25, 2x = 50, 4.2x = 105"
+      }
+      
+      
+      
+      
+
+      
+ ]
