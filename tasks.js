@@ -529,9 +529,67 @@ const tasks = [
         "detailed_solution": "<p>(N/2) × 2/3 = 24</p><p>N/3 = 24</p><p>N = 72</p>"
     },
     "result": "A csoportban 72 diák van."
-}
-
-
+  },
+  {
+    "task_id": 54,
+    "task_text": "Egy kertész kétféle rózsát ültetett. Az első fajta rózsák száma kétszer annyi, mint a második fajta rózsák száma. Az első fajtából 16 rózsa elhervadt, így már csak ugyanannyi maradt, mint a második fajta rózsák száma. Hány rózsát ültetett összesen a kertész?",
+    "explanation": "<p>Jelöljük a második fajta rózsák számát x-szel. Az első fajta rózsák száma kétszer ennyi, tehát 2x. Ha 16 elhervadt, akkor 2x - 16 rózsa marad, ami egyenlő a második fajta rózsák számával (x). Ebből az egyenletből kiszámítható x, majd az ültetett rózsák összes száma: x + 2x.</p>",
+    "equation": {
+        "base_equation": "2x - 16 = x",
+        "detailed_solution": "<p>2x - 16 = x → x = 16</p><p>Összes rózsa = x + 2x = 16 + 32 = 48 rózsa</p>"
+    },
+    "result": "A kertész összesen 48 rózsát ültetett."
+  },
+  {
+    "task_id": 55,
+    "task_text": "Egy teherautó egy építkezésre 3 fuvarban szállított téglát. Az első fuvarban 240 téglát vitt, a második fuvarban ennek 75%-át. A harmadik fuvarban 90-nel kevesebb téglát vitt, mint az első fuvarban. Hány téglát szállított összesen?",
+    "explanation": "<p>Az első fuvarban a teherautó 240 téglát vitt. A második fuvarban ennek 75%-át, tehát 240 × 0,75 = 180 téglát. A harmadik fuvarban 90-nel kevesebbet vitt, mint az első fuvarban, azaz 240 - 90 = 150 téglát. Az összes tégla száma a három fuvar tégláinak összege.</p>",
+    "equation": {
+        "base_equation": "Összes tégla = 240 + (240 × 0,75) + (240 - 90)",
+        "detailed_solution": "<p>Összes tégla = 240 + 180 + 150 = 570 tégla</p>"
+    },
+    "result": "A teherautó összesen 570 téglát szállított."
+  },
+  {
+    "task_id": 56,
+    "task_text": "Egy focicsapat az első félidőben 3 gólt szerzett, ami háromszor annyi, mint az ellenfél által lőtt gólok száma ugyanebben az időszakban. A második félidőben a csapat még 2 gólt szerzett, míg az ellenfél góljainak száma kétszer annyi lett, mint az első félidőben. Hány gólt szerzett összesen a két csapat?",
+    "explanation": "<p>Jelöljük az ellenfél első félidőbeli góljainak számát x-szel. A focicsapat 3 gólt szerzett, ami háromszorosa x-nek, tehát x = 1. A második félidőben a focicsapat még 2 gólt lőtt, az ellenfél pedig 2x-et, vagyis 2 × 1 = 2 gólt. Az összes gól a két félidőben szerzett gólok összege.</p>",
+    "equation": {
+        "base_equation": "Összes gól = 3 + x + 2 + 2x",
+        "detailed_solution": "<p>Összes gól = 3 + 1 + 2 + 2 × 1 = 8 gól</p>"
+    },
+    "result": "A két csapat összesen 8 gólt szerzett."
+  },
+  {
+    "task_id": 57,
+    "task_text": "Egy vonat napi két járatot teljesít. Az első járat során 150 utast szállított. A második járat utasainak száma az első járaté 60%-ával egyezett meg. Ha a vonat mindkét járatán egyaránt 12 jegy nélküli utas volt, hány utasnak volt jegye a két járaton összesen?",
+    "explanation": "<p>Az első járaton 150 utas volt, amelyből 12-nek nem volt jegye, tehát jegyes utasok száma: 150 - 12 = 138. A második járaton az utasok száma az első járat 60%-a volt, azaz 150 × 0,6 = 90. Itt szintén 12 jegy nélküli utas volt, így a jegyes utasok száma 90 - 12 = 78. Az összes jegyes utas száma: 138 + 78.</p>",
+    "equation": {
+        "base_equation": "Összes jegyes = (150 - 12) + (90 - 12)",
+        "detailed_solution": "<p>Összes jegyes = 138 + 78 = 216 utas</p>"
+    },
+    "result": "A két járaton összesen 216 utasnak volt jegye."
+  },
+  {
+    "task_id": 58,
+    "task_text": "Egy gazda háromféle gyümölcsfát ültetett: 20 almafát, kétszer annyi barackfát, mint almafát, és feleannyi szilvafát, mint barackfát. Hány fát ültetett összesen?",
+    "explanation": "<p>A gazda 20 almafát ültetett. A barackfák száma ennek kétszerese, tehát 20 × 2 = 40. A szilvafák száma pedig a barackfák számának fele, azaz 40 ÷ 2 = 20. Az összes fa számát az alma-, barack- és szilvafák számának összege adja.</p>",
+    "equation": {
+        "base_equation": "Összes fa = 20 + 40 + 20",
+        "detailed_solution": "<p>Összes fa = 20 + 40 + 20 = 80 fa</p>"
+    },
+    "result": "A gazda összesen 80 fát ültetett."
+  },
+  {
+    "task_id": 59,
+    "task_text": "Egy futó az első nap 8 km-t futott. A második napon kétszer annyit, mint az első napon. A harmadik napon az előző két nap átlagának megfelelő távot futotta. Összesen hány kilométert futott a három nap alatt?",
+    "explanation": "<p>Az első nap a futó 8 km-t futott. A második napon ennek kétszeresét, tehát 2 × 8 = 16 km-t. A harmadik napon az első két nap átlagát futotta: (8 + 16) ÷ 2 = 12 km. Az összes megtett távolságot úgy kapjuk, hogy összeadjuk a három nap távját.</p>",
+    "equation": {
+        "base_equation": "Összes táv = 8 + 16 + 12",
+        "detailed_solution": "<p>Összes táv = 8 + 16 + 12 = 36 km</p>"
+    },
+    "result": "A futó összesen 36 km-t futott."
+  }
 
 
       
