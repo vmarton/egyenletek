@@ -593,13 +593,13 @@ const tasks = [
   {
     "task_id": 60,
     "task_text": "Egy gazda a négy fia (András, Béla, Csaba, Dezső) között elosztotta a birkanyáját. András kapta a teljes nyáj negyedét, Béla a teljes nyáj harmadát. Csaba az András és Béla része után megmaradt birkák ötödét kapta meg. Dezső 40 birkát vihetett haza. Hány darab birkából állt a gazda birkanyája?",
-    "explanation": "<p>Jelöljük a birkanyáj teljes számát x-szel. András része a teljes nyáj negyede, vagyis x ÷ 4. Béla része a nyáj harmada, vagyis x ÷ 3. Az András és Béla része után megmaradó birkák száma:</p><p>Megmaradó birkák: x - (x ÷ 4 + x ÷ 3).</p><p>Csaba ezt az összeget kapta, osztva öttel, vagyis (x - (x ÷ 4 + x ÷ 3)) ÷ 5. Dezső kapott birkáinak száma ismert: 40. Az összes többi birka az ő része volt.</p><p><strong>x - (x ÷ 4 + x ÷ 3 + (x - (x ÷ 4 + x ÷ 3)) ÷ 5) = 40</strong></p>",
+    "explanation": "<p>Jelöljük a birkanyáj teljes számát x-szel. András része a teljes nyáj negyede, vagyis x ÷ 4. Béla része a nyáj harmada, vagyis x ÷ 3. Az András és Béla része után megmaradó birkák száma:</p><p>Megmaradó birkák: x - (x ÷ 4 + x ÷ 3).</p><p>Csaba ezt az összeget kapta, osztva öttel, vagyis (x - (x ÷ 4 + x ÷ 3)) ÷ 5. Dezső kapott birkáinak száma ismert: 40. Az összes többi birka az ő része volt.</p>",
     "equation": {
-        "base_equation": "",
-        "detailed_solution": "<p>1. Átrendezés és mértékegységre hozás:</p><p>x - (x ÷ 4 + x ÷ 3 + ((x - (x ÷ 4 + x ÷ 3)) ÷ 5)) = 40.</p><p>Oldjuk fel a zárójeleket és számítsuk ki az értéket, hogy megfeleljen az egyenlőség mindegyik értékéknivel megfelelő hangok sorrend is közel helyen.</p>"
+        "base_equation": "x - (x ÷ 4 + x ÷ 3 + (x - (x ÷ 4 + x ÷ 3)) ÷ 5) = 40",
+        "detailed_solution": "<p>1. Számítsuk ki a közös nevezőt András és Béla részénél: x ÷ 4 + x ÷ 3 = (3x + 4x) ÷ 12 = 7x ÷ 12.</p><p>2. Megmaradó birkák: x - 7x ÷ 12 = 12x ÷ 12 - 7x ÷ 12 = 5x ÷ 12.</p><p>3. Csaba része: (5x ÷ 12) ÷ 5 = x ÷ 12.</p><p>4. Dezső része: 40 birka, tehát:</p><p>x - (7x ÷ 12 + x ÷ 12) = 40.</p><p>5. Egyenlet egyszerűsítése: x - 8x ÷ 12 = 40 → 12x ÷ 12 - 8x ÷ 12 = 40 → 4x ÷ 12 = 40.</p><p>6. x = (40 × 12) ÷ 4 = 480 ÷ 4 = 120 birka.</p>"
     },
-    "result": "Helyzete is sok helyből esetleg ebből terjed közöl rásznyqox."
-}  
+    "result": "A gazda birkanyája 120 birkából állt."
+  }
 
 
       
