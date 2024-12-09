@@ -503,9 +503,9 @@ const tasks = [
   {
     "task_id": 51,
     "task_text": "Egy fa törzsének kerülete 30 évvel ezelőtt a mostani kerületének harmada volt. Azóta a fa évente egyenletesen növelte a törzse kerületét 2 cm-rel. Mekkora most a fa törzsének kerülete?",
-    "explanation": "<p>A mostani kerület legyen K. 30 évvel ezelőtt a kerület a harmada volt, azaz K/3. Az eltelt 30 év alatt évente 2 cm-rel növekedett, tehát a növekedés összesen 30 × 2 = 60 cm. A mostani kerület K tehát az akkori kerület (K/3) és a növekedés (60 cm) összege.</p>",
+    "explanation": "<p>A mostani kerület legyen K. 30 évvel ezelőtt a kerület a harmada volt, azaz K/3. Az eltelt 30 év alatt évente 2 cm-rel növekedett, tehát a növekedés összesen 30 × 2 = 60 cm. A mostani kerület K tehát az akkori kerület (K/3) és a növekedés (60 cm) összege.</p><p><strong>K = K/3 + 60</strong></p>",
     "equation": {
-        "base_equation": "K = K/3 + 60",
+        "base_equation": "",
         "detailed_solution": "<p>K = K/3 + 60</p><p>3K = K + 180</p><p>2K = 180</p><p>K = 90</p>"
     },
     "result": "A fa törzsének mostani kerülete 90 cm."
@@ -513,9 +513,9 @@ const tasks = [
   {
     "task_id": 52,
     "task_text": "Egy gazda tyúkjai napi átlagban 24 tojást tojnak. Az első három napban összesen 70 tojást gyűjtött össze. A negyedik napon a szokásos átlagos mennyiség kétszeresét tojta a tyúkok. Hány tojást gyűjtött a gazda az első négy nap alatt?",
-    "explanation": "<p>A negyedik napon a tyúkok 2 × 24 = 48 tojást tojtak. Az első három napban összesen 70 tojást gyűjtöttek, ezért a négy nap összes tojása 70 + 48 lesz.</p>",
+    "explanation": "<p>A negyedik napon a tyúkok 2 × 24 = 48 tojást tojtak. Az első három napban összesen 70 tojást gyűjtöttek, ezért a négy nap összes tojása 70 + 48 lesz.</p><p><strong>Összes tojás = 70 + 48</strong></p>",
     "equation": {
-        "base_equation": "Összes tojás = 70 + 48",
+        "base_equation": "",
         "detailed_solution": "<p>Összes tojás = 70 + 48 = 118 tojás</p>"
     },
     "result": "A gazda az első négy nap alatt 118 tojást gyűjtött."
@@ -523,9 +523,9 @@ const tasks = [
   {
     "task_id": 53,
     "task_text": "Egy tanár csoportjának fele jelentkezett egy iskolai kirándulásra. A jelentkezők kétharmada hozott iskolai beleegyező nyilatkozatot. Összesen 24 diák hozott nyilatkozatot. Hány diák van a csoportban?",
-    "explanation": "<p>A csoport létszámát jelöljük N-nel. A jelentkezők száma N/2, és ezek kétharmada hozott beleegyező nyilatkozatot, azaz (N/2) × 2/3 = 24. Ebből az egyenletből kiszámítjuk N-t.</p>",
+    "explanation": "<p>A csoport létszámát jelöljük N-nel. A jelentkezők száma N/2, és ezek kétharmada hozott beleegyező nyilatkozatot, azaz (N/2) × 2/3 = 24. Ebből az egyenletből kiszámítjuk N-t.</p><p><strong>(N/2) × 2/3 = 24</strong></p>",
     "equation": {
-        "base_equation": "(N/2) × 2/3 = 24",
+        "base_equation": "",
         "detailed_solution": "<p>(N/2) × 2/3 = 24</p><p>N/3 = 24</p><p>N = 72</p>"
     },
     "result": "A csoportban 72 diák van."
@@ -533,9 +533,9 @@ const tasks = [
   {
     "task_id": 54,
     "task_text": "Egy kertész kétféle rózsát ültetett. Az első fajta rózsák száma kétszer annyi, mint a második fajta rózsák száma. Az első fajtából 16 rózsa elhervadt, így már csak ugyanannyi maradt, mint a második fajta rózsák száma. Hány rózsát ültetett összesen a kertész?",
-    "explanation": "<p>Jelöljük a második fajta rózsák számát x-szel. Az első fajta rózsák száma kétszer ennyi, tehát 2x. Ha 16 elhervadt, akkor 2x - 16 rózsa marad, ami egyenlő a második fajta rózsák számával (x). Ebből az egyenletből kiszámítható x, majd az ültetett rózsák összes száma: x + 2x.</p>",
+    "explanation": "<p>Jelöljük a második fajta rózsák számát x-szel. Az első fajta rózsák száma kétszer ennyi, tehát 2x. Ha 16 elhervadt, akkor 2x - 16 rózsa marad, ami egyenlő a második fajta rózsák számával (x). Ebből az egyenletből kiszámítható x, majd az ültetett rózsák összes száma: x + 2x.</p><p><strong>2x - 16 = x</strong></p>",
     "equation": {
-        "base_equation": "2x - 16 = x",
+        "base_equation": "",
         "detailed_solution": "<p>2x - 16 = x → x = 16</p><p>Összes rózsa = x + 2x = 16 + 32 = 48 rózsa</p>"
     },
     "result": "A kertész összesen 48 rózsát ültetett."
@@ -543,9 +543,9 @@ const tasks = [
   {
     "task_id": 55,
     "task_text": "Egy teherautó egy építkezésre 3 fuvarban szállított téglát. Az első fuvarban 240 téglát vitt, a második fuvarban ennek 75%-át. A harmadik fuvarban 90-nel kevesebb téglát vitt, mint az első fuvarban. Hány téglát szállított összesen?",
-    "explanation": "<p>Az első fuvarban a teherautó 240 téglát vitt. A második fuvarban ennek 75%-át, tehát 240 × 0,75 = 180 téglát. A harmadik fuvarban 90-nel kevesebbet vitt, mint az első fuvarban, azaz 240 - 90 = 150 téglát. Az összes tégla száma a három fuvar tégláinak összege.</p>",
+    "explanation": "<p>Az első fuvarban a teherautó 240 téglát vitt. A második fuvarban ennek 75%-át, tehát 240 × 0,75 = 180 téglát. A harmadik fuvarban 90-nel kevesebbet vitt, mint az első fuvarban, azaz 240 - 90 = 150 téglát. Az összes tégla száma a három fuvar tégláinak összege.</p><p><strong>Összes tégla = 240 + (240 × 0,75) + (240 - 90)</strong></p>",
     "equation": {
-        "base_equation": "Összes tégla = 240 + (240 × 0,75) + (240 - 90)",
+        "base_equation": "",
         "detailed_solution": "<p>Összes tégla = 240 + 180 + 150 = 570 tégla</p>"
     },
     "result": "A teherautó összesen 570 téglát szállított."
@@ -553,9 +553,9 @@ const tasks = [
   {
     "task_id": 56,
     "task_text": "Egy focicsapat az első félidőben 3 gólt szerzett, ami háromszor annyi, mint az ellenfél által lőtt gólok száma ugyanebben az időszakban. A második félidőben a csapat még 2 gólt szerzett, míg az ellenfél góljainak száma kétszer annyi lett, mint az első félidőben. Hány gólt szerzett összesen a két csapat?",
-    "explanation": "<p>Jelöljük az ellenfél első félidőbeli góljainak számát x-szel. A focicsapat 3 gólt szerzett, ami háromszorosa x-nek, tehát x = 1. A második félidőben a focicsapat még 2 gólt lőtt, az ellenfél pedig 2x-et, vagyis 2 × 1 = 2 gólt. Az összes gól a két félidőben szerzett gólok összege.</p>",
+    "explanation": "<p>Jelöljük az ellenfél első félidőbeli góljainak számát x-szel. A focicsapat 3 gólt szerzett, ami háromszorosa x-nek, tehát x = 1. A második félidőben a focicsapat még 2 gólt lőtt, az ellenfél pedig 2x-et, vagyis 2 × 1 = 2 gólt. Az összes gól a két félidőben szerzett gólok összege.</p><p><strong>Összes gól = 3 + x + 2 + 2x</strong></p>",
     "equation": {
-        "base_equation": "Összes gól = 3 + x + 2 + 2x",
+        "base_equation": "",
         "detailed_solution": "<p>Összes gól = 3 + 1 + 2 + 2 × 1 = 8 gól</p>"
     },
     "result": "A két csapat összesen 8 gólt szerzett."
@@ -563,9 +563,9 @@ const tasks = [
   {
     "task_id": 57,
     "task_text": "Egy vonat napi két járatot teljesít. Az első járat során 150 utast szállított. A második járat utasainak száma az első járaté 60%-ával egyezett meg. Ha a vonat mindkét járatán egyaránt 12 jegy nélküli utas volt, hány utasnak volt jegye a két járaton összesen?",
-    "explanation": "<p>Az első járaton 150 utas volt, amelyből 12-nek nem volt jegye, tehát jegyes utasok száma: 150 - 12 = 138. A második járaton az utasok száma az első járat 60%-a volt, azaz 150 × 0,6 = 90. Itt szintén 12 jegy nélküli utas volt, így a jegyes utasok száma 90 - 12 = 78. Az összes jegyes utas száma: 138 + 78.</p>",
+    "explanation": "<p>Az első járaton 150 utas volt, amelyből 12-nek nem volt jegye, tehát jegyes utasok száma: 150 - 12 = 138. A második járaton az utasok száma az első járat 60%-a volt, azaz 150 × 0,6 = 90. Itt szintén 12 jegy nélküli utas volt, így a jegyes utasok száma 90 - 12 = 78. Az összes jegyes utas száma: 138 + 78.</p><p><strong>Összes jegyes = (150 - 12) + (90 - 12)</strong></p>",
     "equation": {
-        "base_equation": "Összes jegyes = (150 - 12) + (90 - 12)",
+        "base_equation": "",
         "detailed_solution": "<p>Összes jegyes = 138 + 78 = 216 utas</p>"
     },
     "result": "A két járaton összesen 216 utasnak volt jegye."
@@ -573,9 +573,9 @@ const tasks = [
   {
     "task_id": 58,
     "task_text": "Egy gazda háromféle gyümölcsfát ültetett: 20 almafát, kétszer annyi barackfát, mint almafát, és feleannyi szilvafát, mint barackfát. Hány fát ültetett összesen?",
-    "explanation": "<p>A gazda 20 almafát ültetett. A barackfák száma ennek kétszerese, tehát 20 × 2 = 40. A szilvafák száma pedig a barackfák számának fele, azaz 40 ÷ 2 = 20. Az összes fa számát az alma-, barack- és szilvafák számának összege adja.</p>",
+    "explanation": "<p>A gazda 20 almafát ültetett. A barackfák száma ennek kétszerese, tehát 20 × 2 = 40. A szilvafák száma pedig a barackfák számának fele, azaz 40 ÷ 2 = 20. Az összes fa számát az alma-, barack- és szilvafák számának összege adja.</p><p><strong>Összes fa = 20 + 40 + 20</strong></p>",
     "equation": {
-        "base_equation": "Összes fa = 20 + 40 + 20",
+        "base_equation": "",
         "detailed_solution": "<p>Összes fa = 20 + 40 + 20 = 80 fa</p>"
     },
     "result": "A gazda összesen 80 fát ültetett."
@@ -583,13 +583,23 @@ const tasks = [
   {
     "task_id": 59,
     "task_text": "Egy futó az első nap 8 km-t futott. A második napon kétszer annyit, mint az első napon. A harmadik napon az előző két nap átlagának megfelelő távot futotta. Összesen hány kilométert futott a három nap alatt?",
-    "explanation": "<p>Az első nap a futó 8 km-t futott. A második napon ennek kétszeresét, tehát 2 × 8 = 16 km-t. A harmadik napon az első két nap átlagát futotta: (8 + 16) ÷ 2 = 12 km. Az összes megtett távolságot úgy kapjuk, hogy összeadjuk a három nap távját.</p>",
+    "explanation": "<p>Az első nap a futó 8 km-t futott. A második napon ennek kétszeresét, tehát 2 × 8 = 16 km-t. A harmadik napon az első két nap átlagát futotta: (8 + 16) ÷ 2 = 12 km. Az összes megtett távolságot úgy kapjuk, hogy összeadjuk a három nap távját.</p><p><strong>Összes táv = 8 + 16 + 12</strong></p>",
     "equation": {
-        "base_equation": "Összes táv = 8 + 16 + 12",
+        "base_equation": "",
         "detailed_solution": "<p>Összes táv = 8 + 16 + 12 = 36 km</p>"
     },
     "result": "A futó összesen 36 km-t futott."
-  }
+  },
+  {
+    "task_id": 60,
+    "task_text": "Egy gazda a négy fia (András, Béla, Csaba, Dezső) között elosztotta a birkanyáját. András kapta a teljes nyáj negyedét, Béla a teljes nyáj harmadát. Csaba az András és Béla része után megmaradt birkák ötödét kapta meg. Dezső 40 birkát vihetett haza. Hány darab birkából állt a gazda birkanyája?",
+    "explanation": "<p>Jelöljük a birkanyáj teljes számát x-szel. András része a teljes nyáj negyede, vagyis x ÷ 4. Béla része a nyáj harmada, vagyis x ÷ 3. Az András és Béla része után megmaradó birkák száma:</p><p>Megmaradó birkák: x - (x ÷ 4 + x ÷ 3).</p><p>Csaba ezt az összeget kapta, osztva öttel, vagyis (x - (x ÷ 4 + x ÷ 3)) ÷ 5. Dezső kapott birkáinak száma ismert: 40. Az összes többi birka az ő része volt.</p><p><strong>x - (x ÷ 4 + x ÷ 3 + (x - (x ÷ 4 + x ÷ 3)) ÷ 5) = 40</strong></p>",
+    "equation": {
+        "base_equation": "",
+        "detailed_solution": "<p>1. Átrendezés és mértékegységre hozás:</p><p>x - (x ÷ 4 + x ÷ 3 + ((x - (x ÷ 4 + x ÷ 3)) ÷ 5)) = 40.</p><p>Oldjuk fel a zárójeleket és számítsuk ki az értéket, hogy megfeleljen az egyenlőség mindegyik értékéknivel megfelelő hangok sorrend is közel helyen.</p>"
+    },
+    "result": "Helyzete is sok helyből esetleg ebből terjed közöl rásznyqox."
+}  
 
 
       
