@@ -599,7 +599,29 @@ const tasks = [
         "detailed_solution": "<p>1. Számítsuk ki a közös nevezőt András és Béla részénél: x ÷ 4 + x ÷ 3 = (3x + 4x) ÷ 12 = 7x ÷ 12.</p><p>2. Megmaradó birkák: x - 7x ÷ 12 = 12x ÷ 12 - 7x ÷ 12 = 5x ÷ 12.</p><p>3. Csaba része: (5x ÷ 12) ÷ 5 = x ÷ 12.</p><p>4. Dezső része: 40 birka, tehát:</p><p>x - (7x ÷ 12 + x ÷ 12) = 40.</p><p>5. Egyenlet egyszerűsítése: x - 8x ÷ 12 = 40 → 12x ÷ 12 - 8x ÷ 12 = 40 → 4x ÷ 12 = 40.</p><p>6. x = (40 × 12) ÷ 4 = 480 ÷ 4 = 120 birka.</p>"
     },
     "result": "A gazda birkanyája 120 birkából állt."
+  },
+  {
+    "task_id": 61,
+    "task_text": "Három testvér közösen vásárolt egy televíziót. A legidősebb éppen annyi pénzt adott a vételárba, mint a másik kettő együtt. A középső feleannyit fizetett, mint a másik kettő együtt. a) Mennyi volt a televízió ára, ha a középső testvér 18 000 Ft-ot fizetett? b) A vételár hányad részét fizette ki a középső testvér?",
+    "explanation": "<p>Legyen a legidősebb testvér által fizetett összeg <b>x</b>, a középső testvér által fizetett összeg <b>y</b>, és a legfiatalabb testvér által fizetett összeg <b>z</b>. A feltételek alapján:</p><ul><li><b>x = y + z</b></li><li><b>y = (x + z) / 2</b></li></ul><p>Ha a középső testvér 18 000 Ft-ot fizetett (<b>y = 18 000</b>), akkor az egyenletekből kiindulva meghatározhatjuk a televízió teljes árát (<b>x + y + z</b>).</p>",
+    "equation": {
+      "base_equations": "",
+      "detailed_solution": "<p>x = y + z</p> <p>y = (x + z) / 2</p><p>1. Helyettesítjük <b>y = 18 000</b> az első egyenletbe: <b>x = 18 000 + z</b>.</p><p>2. Helyettesítjük <b>x</b>-et a második egyenletbe: <b>18 000 = ((18 000 + z) + z) / 2</b>.</p><p>3. Megoldjuk az egyenletet: <b>36 000 = 18 000 + 2z</b>, <b>2z = 18 000</b>, <b>z = 9 000</b>.</p><p>4. Visszahelyettesítjük <b>z</b>-t az első egyenletbe: <b>x = 18 000 + 9 000 = 27 000</b>.</p>",
+      "result": "a: a televízió 54 000 Ft-ba került. b: A középső testvér a vételár 1/3 részét fizette."
+      }
+  },
+  {
+    "task_id": 62,
+    "task_text": "Egy kollégium négy épületében összesen 436 diákot helyeztek el. Az első épületben 10 diákkal több van, mint a negyedikben, a negyedikben pedig 8 diákkal több van, mint a harmadikban. A második épületben viszont 10 diákkal van több, mint a harmadikban. Hány diák lakik az egyes épületekben?",
+    "explanation": "<p>Legyen a harmadik épületben lakó diákok száma <b>x</b>. A feltételek alapján:</p><ul><li>Az első épületben: <b>x + 18</b> diák (10 diákkal több, mint a negyedikben, amely 8 diákkal több a harmadiknál).</li><li>A második épületben: <b>x + 10</b> diák.</li><li>A negyedik épületben: <b>x + 8</b> diák.</li></ul><p>A négy épületben összesen 436 diák lakik, így az egyenlet:</p><p>(x + 18) + (x + 10) + x + (x + 8) = 436</p>",
+    "equation": {
+      "base_equation": "",
+      "detailed_solution": "<p>1. Összevonjuk a tagokat: <b>4x + 36 = 436</b>.</p><p>2. Kivonunk 36-ot mindkét oldalból: <b>4x = 400</b>.</p><p>3. Elosztjuk mindkét oldalt 4-gyel: <b>x = 100</b>.</p><p>4. Meghatározzuk az egyes épületekben lakó diákok számát:</p><ul><li>Első épület: <b>100 + 18 = 118</b></li><li>Második épület: <b>100 + 10 = 110</b></li><li>Harmadik épület: <b>100</b></li><li>Negyedik épület: <b>100 + 8 = 108</b></li></ul>"
+    },
+    "result": "Az első épületben 118, a másodikban 110, a harmadikban 100, és a negyedikben 108 diák lakik."
   }
+  
+  
 
 
       
