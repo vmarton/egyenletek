@@ -18,6 +18,7 @@
 
       // Load the next task sequentially
       const nextTask = tasks[currentTaskIndex];
+      document.getElementById('taskid').innerHTML = nextTask.task_id;
       document.getElementById('text').innerHTML = nextTask.task_text;
       document.getElementById('explanation').innerHTML = nextTask.explanation;
       document.getElementById('detailed').innerHTML = nextTask.equation.detailed_solution + '<br><strong>' + nextTask.result + '</strong>';
@@ -74,6 +75,7 @@
       <div class="col-6">
         <div class="card bg-white">
           <div class="card-body p-4">
+            <p id="taskid" class="mb-0 task-text"></p>
             <p id="text" class="mb-0 task-text"></p>
           </div>
         </div>    
