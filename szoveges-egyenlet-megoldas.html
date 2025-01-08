@@ -15,11 +15,24 @@
         bootstrap.Collapse.getInstance(collapse)?.hide();
       });
 
-      // Load new task
-      const randomTask = tasks[Math.floor(Math.random() * tasks.length)];
-      document.getElementById('text').innerHTML = randomTask.task_text;
-      document.getElementById('explanation').innerHTML = randomTask.explanation;
-      document.getElementById('detailed').innerHTML = randomTask.equation.detailed_solution + '<br><strong>' + randomTask.result + '</strong>';
+      let currentTaskIndex = 0; // Initialize the task index
+
+      function loadTask() {
+        // Close all collapse elements
+        const collapseElements = document.querySelectorAll('.collapse');
+        collapseElements.forEach(collapse => {
+          bootstrap.Collapse.getInstance(collapse)?.hide();
+        });
+
+        // Load the next task sequentially
+        const nextTask = tasks[currentTaskIndex];
+        document.getElementById('text').innerHTML = nextTask.task_text;
+        document.getElementById('explanation').innerHTML = nextTask.explanation;
+        document.getElementById('detailed').innerHTML = nextTask.equation.detailed_solution + '<br><strong>' + nextTask.result + '</strong>';
+
+        // Increment the task index, wrap around if it exceeds the array length
+        currentTaskIndex = (currentTaskIndex + 1) % tasks.length;
+      }
     }
   </script>
   <style>
