@@ -18,9 +18,9 @@
 
       // Load the next task sequentially
       const nextTask = tasks[currentTaskIndex];
-      document.getElementById('task-text').innerHTML = nextTask.task_text;
+      document.getElementById('text').innerHTML = nextTask.task_text;
       document.getElementById('explanation').innerHTML = nextTask.explanation;
-      document.getElementById('detailed-solution').innerHTML = nextTask.equation.detailed_solution + '<br><strong>' + nextTask.result + '</strong>';
+      document.getElementById('detailed').innerHTML = nextTask.equation.detailed_solution + '<br><strong>' + nextTask.result + '</strong>';
 
       // Increment the task index, wrap around if it exceeds the array length
       currentTaskIndex = (currentTaskIndex + 1) % tasks.length;
