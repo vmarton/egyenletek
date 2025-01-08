@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <script src="tasks.js"></script>
   <script>
+    let currentTaskIndex = 0;
     function loadTask() {
       // Close all collapse elements
       const collapseElements = document.querySelectorAll('.collapse');
@@ -15,24 +16,14 @@
         bootstrap.Collapse.getInstance(collapse)?.hide();
       });
 
-      let currentTaskIndex = 0; // Initialize the task index
+      // Load the next task sequentially
+      const nextTask = tasks[currentTaskIndex];
+      document.getElementById('task-text').innerHTML = nextTask.task_text;
+      document.getElementById('explanation').innerHTML = nextTask.explanation;
+      document.getElementById('detailed-solution').innerHTML = nextTask.equation.detailed_solution + '<br><strong>' + nextTask.result + '</strong>';
 
-      function loadTask() {
-        // Close all collapse elements
-        const collapseElements = document.querySelectorAll('.collapse');
-        collapseElements.forEach(collapse => {
-          bootstrap.Collapse.getInstance(collapse)?.hide();
-        });
-
-        // Load the next task sequentially
-        const nextTask = tasks[currentTaskIndex];
-        document.getElementById('task-text').innerHTML = nextTask.task_text;
-        document.getElementById('explanation').innerHTML = nextTask.explanation;
-        document.getElementById('detailed_solution').innerHTML = nextTask.equation.detailed_solution + '<br><strong>' + nextTask.result + '</strong>';
-
-        // Increment the task index, wrap around if it exceeds the array length
-        currentTaskIndex = (currentTaskIndex + 1) % tasks.length;
-      }
+      // Increment the task index, wrap around if it exceeds the array length
+      currentTaskIndex = (currentTaskIndex + 1) % tasks.length;
     }
   </script>
   <style>
