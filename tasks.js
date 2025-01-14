@@ -282,13 +282,13 @@ const tasks = [
       },
       {
         "task_id": 29,
-        "task_text": "Kertész gazda egy kosár almát vitt a piacra. Az első vevő megvette az almák felét, a második a maradék harmadát, a harmadik a még megmaradt almák ötödét. A negyedik vevő elvitte a megmaradt nyolc almát. Hány alma volt a kosárban eredetileg?",
-        "explanation": "<p>Legyen az eredeti alma mennyisége x.</p><p>Feltételek:</p><ul><li>Első vevő: <code>x / 2</code>.</li><li>Második vevő: <code>(x - x / 2) / 3</code>.</li><li>Harmadik vevő: <code>((x - x / 2) - (x - x / 2) / 3) / 5</code>.</li><li>Negyedik vevő: <code>8</code>.</li></ul><p>Összesen: <code>x / 2 + (x - x / 2) / 3 + ((x - x / 2) - (x - x / 2) / 3) / 5 + 8 = x</code>.</p>",
+        "task_text": "Péter három nap alatt épített fel téglákból egy falat. Hétfőn felépítette a fal negyedét, kedden a 40%-át, szerdára pedig már csak 49 téglát kellett beépítenie. Hány téglából áll a fal?",
+        "explanation": "<p>Legyen az összes felhasznált tégla száma x.</p><p>Hétfőn beépített 0,25x téglát</p><p>Kedden 0,4x téglát</p><p>Szerdán 49 téglát</p>",
         "equation": {
-          "base_equation": "x / 2 + (x - x / 2) / 3 + ((x - x / 2) - (x - x / 2) / 3) / 5 + 8 = x",
-          "detailed_solution": "x = 120"
+          "base_equation": "",
+          "detailed_solution": "<p>x = 0,25x + 0,4x + 49</p><p>x = 0,65x + 49</p><p>0,35x = 49</p><p>Kiszámoljuk az x 1%-át (azaz a 0,01x-et): 49 / 35 = 1,4</p><p>A 100%, vagyis x = 140.</p>"
         },
-        "result": "Eredetileg 120 alma volt."
+        "result": "Tehát 140 tégla van a falban."
       },
       {
         "task_id": 30,
@@ -322,13 +322,13 @@ const tasks = [
       },
       {
         "task_id": 33,
-        "task_text": "Egy trapéz párhuzamos oldalainak hossza 8 cm és 12 cm, a magassága 5 cm. Mekkora a trapéz területe?",
-        "explanation": "<p>A trapéz területének képlete: <b>(a + b) * h / 2</b>, ahol <b>a</b> és <b>b</b> a párhuzamos oldalak, <b>h</b> pedig a magasság.</p><p>A terület: <b>(8 + 12) * 5 / 2</b>.</p>",
+        "task_text": "Nagyi bevásárláskor a pénze ötödrészén almát vett, negyedrészén káposztát, 30%-án szőlőt, és még megmaradt 120 forintja a végén. Mennyi pénze volt eredetileg?",
+        "explanation": "<p>Legyen a pénz mennyisége x</p><p>Ötödrész alma: 0,2x</p><p>Negyedrész káposzta: 0,25x</p><p>30% szőlő: 0,3x</p><p>És még maradt 120</p><p>A képlet: x = 0,2x + 0,25x + 0,3x + 120</p>",
         "equation": {
-          "base_equation": "(8 + 12) * 5 / 2",
-          "detailed_solution": "<p>20 * 5 / 2</p>"
+          "base_equation": "",
+          "detailed_solution": "<p>x = 0,75x + 120</p><p>0,25x = 120</p><p>x = 480</p>"
         },
-        "result": "Terület = 50 cm²"
+        "result": "480 forintja volt nagyinak."
       },
       {
         "task_id": 34,
@@ -619,7 +619,17 @@ const tasks = [
       "detailed_solution": "<p>1. Összevonjuk a tagokat: <b>4x + 36 = 436</b>.</p><p>2. Kivonunk 36-ot mindkét oldalból: <b>4x = 400</b>.</p><p>3. Elosztjuk mindkét oldalt 4-gyel: <b>x = 100</b>.</p><p>4. Meghatározzuk az egyes épületekben lakó diákok számát:</p><ul><li>Első épület: <b>100 + 18 = 118</b></li><li>Második épület: <b>100 + 10 = 110</b></li><li>Harmadik épület: <b>100</b></li><li>Negyedik épület: <b>100 + 8 = 108</b></li></ul>"
     },
     "result": "Az első épületben 118, a másodikban 110, a harmadikban 100, és a negyedikben 108 diák lakik."
-  }
+  },
+  {
+    "task_id": 63,
+    "task_text": "Kertész gazda egy kosár almát vitt a piacra. Az első vevő megvette az almák felét, a második a maradék harmadát, a harmadik a még megmaradt almák ötödét. A negyedik vevő elvitte a megmaradt nyolc almát. Hány alma volt a kosárban eredetileg?",
+    "explanation": "<p>Legyen az eredeti alma mennyisége x.</p><p>Feltételek:</p><ul><li>Első vevő: <code>x / 2</code>.</li><li>Második vevő: <code>(x - x / 2) / 3</code>.</li><li>Harmadik vevő: <code>((x - x / 2) - (x - x / 2) / 3) / 5</code>.</li><li>Negyedik vevő: <code>8</code>.</li></ul><p>Összesen: <code>x / 2 + (x - x / 2) / 3 + ((x - x / 2) - (x - x / 2) / 3) / 5 + 8 = x</code>.</p>",
+    "equation": {
+      "base_equation": "x / 2 + (x - x / 2) / 3 + ((x - x / 2) - (x - x / 2) / 3) / 5 + 8 = x",
+      "detailed_solution": "x = 120"
+    },
+    "result": "Eredetileg 120 alma volt."
+  }  
   
   
 
